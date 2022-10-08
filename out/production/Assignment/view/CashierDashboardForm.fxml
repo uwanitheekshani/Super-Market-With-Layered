@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cashierContext" prefHeight="725.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierDashboardFormController">
+   <children>
+      <Pane prefHeight="735.0" prefWidth="200.0" style="-fx-background-color: #7f8c8d;">
+         <children>
+            <JFXButton layoutY="271.0" onAction="#btnPlaceOrderOnAction" prefHeight="78.0" prefWidth="200.0" style="-fx-background-color: #f7f1e3;" text="Place Order ">
+               <font>
+                  <Font name="Bell MT Bold" size="16.0" />
+               </font>
+               <effect>
+                  <BoxBlur height="78.93" />
+               </effect>
+            </JFXButton>
+            <ImageView fitHeight="69.0" fitWidth="84.0" layoutX="51.0" layoutY="21.0" pickOnBounds="true">
+               <image>
+                  <Image url="@assests/supermarkets.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="11.0" layoutY="103.0" prefHeight="3.0" prefWidth="168.0" style="-fx-background-color: #2d3436;" />
+            <JFXButton layoutY="133.0" onAction="#btnManageCustomerOnAction" prefHeight="78.0" prefWidth="200.0" style="-fx-background-color: #f7f1e3;" text="Manage Customer">
+               <font>
+                  <Font name="Bell MT Bold" size="16.0" />
+               </font>
+               <effect>
+                  <BoxBlur height="78.93" />
+               </effect>
+            </JFXButton>
+            <JFXButton layoutY="410.0" onAction="#btnManageCustomerOrderOnAction" prefHeight="78.0" prefWidth="200.0" style="-fx-background-color: #f7f1e3;" text="Manage Customer Order">
+               <font>
+                  <Font name="Bell MT Bold" size="16.0" />
+               </font>
+               <effect>
+                  <BoxBlur height="78.93" />
+               </effect>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="199.0" prefHeight="71.0" prefWidth="1213.0" style="-fx-background-color: #d1ccc0;">
+         <children>
+            <Label layoutX="35.0" layoutY="22.0" prefHeight="21.0" prefWidth="61.0" text="Date :" textFill="#2d3436">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="96.0" layoutY="28.0" text="2022-03-15" textFill="#2d3436">
+               <font>
+                  <Font name="Britannic Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="968.0" layoutY="24.0" prefHeight="27.0" prefWidth="75.0" text="Time :" textFill="#2d3436">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="376.0" layoutY="14.0" text="GOLDSTAR SUPERMARKET" textFill="#2c2c54">
+               <font>
+                  <Font name="Bodoni MT" size="34.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="1043.0" layoutY="26.0" prefHeight="26.0" prefWidth="146.0" text="22:34:40" textFill="#2d3436">
+               <font>
+                  <Font name="Britannic Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Glow />
+         </effect>
+      </Pane>
+      <AnchorPane fx:id="mainCashierContext" layoutX="200.0" layoutY="71.0" prefHeight="664.0" prefWidth="1212.0" style="-fx-background-color: #aaa69d;">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
